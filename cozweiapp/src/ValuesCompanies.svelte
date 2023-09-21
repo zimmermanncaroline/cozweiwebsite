@@ -37,7 +37,7 @@
         <td>1,87</td>
       </tr>
       <tr>
-      <td id="quelle" colspan="4"><a href="#">Quelle: https://kontrast.at/corona-klima/</a></td>
+      <td id="quelle" colspan="4"><a href="https://kontrast.at/corona-klima/" target="_blank">Quelle: https://kontrast.at/corona-klima/</a></td>
     </tr>
     </tbody>
   </table>
