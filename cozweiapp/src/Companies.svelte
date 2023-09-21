@@ -41,7 +41,7 @@
     
 </script>
 
-<h3>Unternehmen</h3>
+<h5>Unternehmen</h5>
 
 <table class="table">
     <thead>

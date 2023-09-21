@@ -3,8 +3,7 @@
 	import Menue from "./Menue.svelte";
 	import Nav from "./Nav.svelte";
 	import Footer from "./Footer.svelte";
-    import Companies from "./Companies.svelte";
-    import Countries from "./Countries.svelte";
+	import Filter from "./Filter.svelte";
 </script>
 
 <main>
@@ -14,9 +13,7 @@
 	<br>
 	<Intro />
 	<br>
-	<Companies />
-	<br>
-	<Countries />
+	<Filter />
 	<br>
 	<Footer />
 </main>
