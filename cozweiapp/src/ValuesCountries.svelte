@@ -13,6 +13,11 @@
     </thead>
     <tbody>
       <tr>
+        <td>China</td>
+        <td>11.256</td>
+        <td>29,7</td>
+      </tr>
+      <tr>
         <td>USA</td>
         <td>5.275</td>
         <td>13,9</td>

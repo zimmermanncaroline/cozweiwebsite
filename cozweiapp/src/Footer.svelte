@@ -17,7 +17,7 @@
 
 <style>
     #footer {
-        background-color: lightgreen;
+        background-color: #80BD9E;
         padding: 2%
     }
 </style>

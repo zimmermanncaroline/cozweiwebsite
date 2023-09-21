@@ -21,9 +21,27 @@
             compName: "National Iranian Oil Co",
             emission: "2,28"
 
+        },
+        {
+            id: "5",
+            compName: "ExxonMobil Corp",
+            emission: "1,98"
+        },
+        {
+            id: "6",
+            compName: "Coal India",
+            emission: "1,87"
+        },
+        {
+            id: "7",
+            compName: "Petroleos Mexicanos (Pemex)",
+            emission: "1,87"
         }
     ]
+    
 </script>
+
+<h3>Unternehmen</h3>
 
 <table class="table">
     <thead>
@@ -32,4 +50,34 @@
         <th scope="col">globaler Anteil in %</th>
       </tr>
     </thead>
+    <tbody>
+        {#each companies as company(company.id)}
+        <tr>
+            <td>{company.compName}</td>
+            <td>{company.emission}</td>
+        </tr>
+        {/each}
+        <tr>
+            <td id="quelle" colspan="4"><a href="https://kontrast.at/corona-klima/" target="_blank">Quelle: https://kontrast.at/corona-klima/</a></td>
+        </tr>
+    </tbody>
 </table>
+
+<style>
+    table {
+        max-width: 600px;
+        margin: auto;
+    }
+    thead th:nth-child(1) {
+        text-align: left;
+    }
+    tbody td:nth-child(odd) {
+        text-align: left;
+    }
+
+    #quelle {
+        font-size: small;
+        text-align: left;
+        padding-left: 5%;
+    }
+</style>

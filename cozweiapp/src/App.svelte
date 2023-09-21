@@ -2,10 +2,9 @@
 	import Intro from "./Intro.svelte";
 	import Menue from "./Menue.svelte";
 	import Nav from "./Nav.svelte";
-    import ValuesCountries from "./ValuesCountries.svelte";
 	import Footer from "./Footer.svelte";
-    import ValuesCompanies from "./ValuesCompanies.svelte";
     import Companies from "./Companies.svelte";
+    import Countries from "./Countries.svelte";
 </script>
 
 <main>
@@ -15,14 +14,11 @@
 	<br>
 	<Intro />
 	<br>
-	<br>
-	<ValuesCountries />
-	<br>
-	<ValuesCompanies />
-	<br>
 	<Companies />
 	<br>
-
+	<Countries />
+	<br>
+	<Footer />
 </main>
 
 <style>
