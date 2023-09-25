@@ -64,10 +64,15 @@
 </table>
 
 <style>
-    table {
+    .table {
         max-width: 600px;
         margin: auto;
     }
+
+    .table {
+        background-color:  #80BD9E;
+    }
+
     thead th:nth-child(1) {
         text-align: left;
     }

@@ -86,11 +86,16 @@
 <style>
     #footer {
         background-color: #80BD9E;
+        color: black;
         padding: 2%
     }
     ul li {
       display: inline;
       padding: 2%;
+    }
+
+    ul li a {
+      color: black;
     }
 
     ul li a:active, ul li a:focus {

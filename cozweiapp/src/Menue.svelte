@@ -17,11 +17,11 @@
 </div>
   <style>
     #menue {
-        background-color: #80BD9E;
+        background-color: #2673B8;
         padding: 2%;
     }
 
     ul li a {
-        color: black;
+        color: white;
     }
   </style>

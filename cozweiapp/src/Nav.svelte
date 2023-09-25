@@ -2,7 +2,7 @@
     <div class="container-fluid">
     <a class="navbar-brand" href="#"> 
         <figure>
-            <img src="media/coZweiLogo.png">
+            <img src="media/logo.png">
             <figcaption>COZWEI</figcaption>
         </figure>
     </a>
@@ -32,6 +32,7 @@
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
         letter-spacing: 10px;
         text-align: right;
+        padding-top: 10px;
     }
     nav ul li a img {
         width: 70%;
