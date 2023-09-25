@@ -8,7 +8,6 @@
     <p>{comp.compName}</p>
     {/each}
 
-    
 </div>
 
 <style>
