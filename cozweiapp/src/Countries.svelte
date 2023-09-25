@@ -1,5 +1,6 @@
 <script>
-    let countries = [
+    export let countries;
+    countries = [
         {
             id: "1",
             counName: "China",

@@ -1,5 +1,6 @@
 <script>
-    let companies = [
+    export let companies;
+    companies = [
         {
             id: "1",
             compName: "China (Coal)",
@@ -38,7 +39,7 @@
             emission: "1,87"
         }
     ]
-    
+ 
 </script>
 
 <h5>Unternehmen</h5>
