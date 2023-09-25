@@ -1,6 +1,5 @@
 <script>
-    export let companies;
-    companies = [
+    export const companies = [
         {
             id: "1",
             compName: "China (Coal)",
