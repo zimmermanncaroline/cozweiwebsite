@@ -1,12 +1,15 @@
 <script>
     import {companies} from "./Companies.svelte";
-    const listComp = [];
+    for(let i = 0; i <= companies.length(), i++) {
+        let listComp = companies[i].compName;
+    }
+
 </script>
 
 <div>
-    {#each companies as comp(compName)}
-    <p>{listComp.push()}</p>
-    {/each}
+
+    <p>{companies}</p>
+
 
 </div>
 

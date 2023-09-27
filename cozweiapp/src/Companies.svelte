@@ -51,7 +51,7 @@
       </tr>
     </thead>
     <tbody>
-        {#each companies as company(company.id)}
+        {#each companies as company}
         <tr>
             <td>{company.compName}</td>
             <td>{company.emission}</td>

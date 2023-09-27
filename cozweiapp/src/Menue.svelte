@@ -2,7 +2,7 @@
 
 </script>
 
-<div id="menue">
+<div id="menue" dir=auto>
     <ul class="nav">
     <li class="nav-item h5">
       <a class="nav-link" href="#">Active</a>
