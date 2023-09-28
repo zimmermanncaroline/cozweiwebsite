@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html"> 
             <figure>
-                <img src="/media/logo.png">
+                <img src="/media/logo.png" alt="Logo von CO Zwei">
                 <figcaption>COZWEI</figcaption>
             </figure>
         </a>

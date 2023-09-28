@@ -1,4 +1,5 @@
 <!-- Beginn des Markup-Bereichs mit den CSS-Klassen von Bootstrap -->
+<!-- automatische Änderung der Lese-Richtung durch Attribut und Wert "dir = auto" -->
 <div id="menue" dir=auto>
     <ul class="nav">
     <li class="nav-item h5">
