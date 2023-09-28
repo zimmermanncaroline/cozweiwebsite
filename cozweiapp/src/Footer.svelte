@@ -1,8 +1,9 @@
 <script>
+// Anlegen von boolschen Variablen
   let showData = false;
   let showContact = false;
   let showImprint = false;
-
+// Funktionen zum Ein- und Ausblenden von Markup-Inhalten  
   const toggleData = () => {
     showData = !showData;
     showContact = false;
@@ -22,7 +23,9 @@
   }
 </script>
 
+<!-- Beginn des Markup-Bereichs -->
 <div id="footer">
+<!-- Anlegen der Toggle-Buttons in einer Liste -->
     <ul class="justify-content-center">
         <li>
           <a href="#footer" on:click={toggleContact}>Kontakt</a>
@@ -34,8 +37,7 @@
           <a href="#footer" on:click={toggleData}>Datenschutz</a>
         </li>
       </ul>
-
-
+<!-- Bedingte Abfragen zum Anzeigen der Daten -->
 {#if showData}
 <div class="footer-container">
   <div class="data">
@@ -89,6 +91,7 @@
         color: black;
         padding: 2%
     }
+    
     ul li {
       display: inline;
       padding: 2%;
@@ -110,6 +113,7 @@
       height: 200px;
       overflow: scroll;
     }
+
     .data {
       max-width: 600px;
       margin: auto;

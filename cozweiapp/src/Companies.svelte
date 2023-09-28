@@ -1,6 +1,10 @@
 <script>
+// Import von benötigten Komponenten
+/* zum Wiederverwenden und Filtern der Daten muss die Funktion writeable aus der 
+    Svelte-Bibliothek importiert werden */
     import { writable } from "svelte/store";
     const Companies = writable(0);
+// Daten Speichern in einem Array
     $Companies = [
         {
             compName: "China (Coal)",
@@ -17,7 +21,6 @@
         {
             compName: "National Iranian Oil Co",
             emission: 2.28,
-
         },
         {
             compName: "ExxonMobil Corp",
@@ -32,7 +35,7 @@
             emission: 1.87,
         }
     ];
-
+// Sortierfunktion, bei der die einzelnen Emissionswerte vergleichen werden
     function sortCompanies(multiplier) {
         $Companies.sort((a,b) => {
             if (a.emission > b.emission) {
@@ -45,17 +48,20 @@
         })
         $Companies = $Companies;
     }
- 
 </script>
 
-<h5>Unternehmen</h5>
+<!-- Beginn des Markup-Bereichs -->
+<h4>Unternehmen</h4>
+<!-- Beginn Tabelle -->
 <table class="table">
     <thead>
       <tr>
         <th scope="col">Name</th>
         <th scope="col">globaler Anteil in % 
+<!-- Anlegen der Sortier-Buttons in einer Liste -->
             <ul class="buttons">
                 <li>
+<!-- Aufrufen der Soriterfunktion aufsteigend und absteigend innerhalb der Button-->
                     <button id="up" on:click={() => {sortCompanies(1)}}>&#9650;</button>
                 </li>
                 <li>
@@ -66,6 +72,7 @@
       </tr>
     </thead>
     <tbody>
+<!-- Durchlaufen des Arrays und Anlegen der Daten in die Tabelle -->
         {#each $Companies as company}
         <tr>
             <td>{company.compName}</td>
@@ -77,6 +84,7 @@
         </tr>
     </tbody>
 </table>
+<!-- Ende Markup-Bereich -->
 
 <style>
     ul.buttons { 
@@ -85,27 +93,20 @@
         padding: 0;
         margin: 0;
     }
+    button {
+        width: 1.5em;
+        height: 1.5em;
+    }
 
-    @media only screen and (max-width: 700px) {
-        table thead tr th:nth-child(2) {
-            position: relative;
-        }
+    ul.buttons {
+        position: absolute;
+        right: -20px;
+        top: 10px;
+        width: 20px;
+    }
 
-        button {
-            width: 1.5em;
-            height: 1.5em;
-        }
-
-        ul.buttons {
-            position: absolute;
-            right: -20px;
-            top: 10px;
-            width: 20px;
-        }
-
-        ul.buttons li {
-            display: block;
-        }
+    ul.buttons li {
+        display: block;
     }
 
     ul.buttons li {
@@ -141,5 +142,11 @@
         font-size: small;
         text-align: left;
         padding-left: 5%;
+    }
+/* Mediaqueries für kleiner Bildschirme unter 700px */
+    @media only screen and (max-width: 700px) {
+        table thead tr th:nth-child(2) {
+            position: relative;
+        }         
     }
 </style>
