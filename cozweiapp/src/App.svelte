@@ -4,7 +4,6 @@
 	import Nav from "./Nav.svelte";
 	import Footer from "./Footer.svelte";
 	import Filter from "./Filter.svelte";
-
 </script>
 
 <main>
@@ -17,8 +16,6 @@
 	<Filter />
 	<br>
 	<Footer />
-	<br>
-
 </main>
 
 <style>
